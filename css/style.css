@@ -3,9 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: rgb(123, 165, 255);
-}
+
 .contenedor_card{
     height: 500px;
     object-fit: cover;
@@ -21,4 +19,8 @@ body{
 .text_years{
     font-size: 80px;
     color:rgb(123, 165, 255); 
+}
+
+.contenedor_reproductor{
+    background-color:rgb(123, 165, 255); 
 }

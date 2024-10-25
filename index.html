@@ -31,7 +31,8 @@
             <iframe class="reproductor" id="audioFrame" src="https://drive.google.com/file/d/1kWSpick5VV0UZtrsqCI_EqqiLFezIxdq/preview?autoplay=1" width="300" height="80" allow="autoplay"></iframe>
             <p class="text-center"> Dale play para musicalizar el momento</p>
         </div> -->
-        <div class="d-flex align-items-center justify-content-center my-3">
+      
+        <div class="contenedor_reproductor d-flex align-items-center justify-content-center py-3">
             <audio controls autoplay loop >
                 <source src="/audio/miloj-mai.m4a" type="audio/mp3">
                 Tu navegador no soporta el elemento de audio.
@@ -79,7 +80,12 @@
 
 
 
-    
+        <script>
+            window.onload = function() {
+                const audio = document.getElementById('myAudio');
+                audio.play(); // Inicia la reproducción automáticamente
+            };
+        </script>   
 <script>
     function countUp() {
         const startDate = new Date("November 7, 2023 00:00:00").getTime();
