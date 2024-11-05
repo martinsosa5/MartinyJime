@@ -142,15 +142,15 @@
                 const now = new Date().getTime();
                 const distance = targetDate - now;
     
-                // Cálculo de días, horas, minutos y segundos
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                // Cálculo total en horas, minutos y segundos
+                const totalHours = Math.floor(distance / (1000 * 60 * 60));
+                const hours = totalHours % 24; // Horas restantes del día
                 const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
                 // Mostrar el contador
                 document.getElementById("countdown").innerHTML = 
-                    `${hours}: ${minutes}: ${seconds}`;
+                    `${totalHours}: ${minutes}: ${seconds}`;
     
                 // Detener el contador cuando llegue a la fecha objetivo
                 if (distance < 0) {
