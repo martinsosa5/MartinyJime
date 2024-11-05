@@ -5,7 +5,7 @@
 }
 
 .contenedor_card{
-    height: 500px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -41,9 +41,62 @@
 
 .gradient-overlay h2 {
     position: absolute;
-    bottom: 60px; /* Ajusta la posición desde la parte inferior */
+    bottom: 50px; /* Ajusta la posición desde la parte inferior */
     left: 50%;
     transform: translateX(-50%); /* Centra horizontalmente el texto */
     color: white; /* Cambia el color del texto según tu diseño */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Agrega un poco de sombra para mejor legibilidad */
+}
+
+.img_galeria{
+    height: 300px;
+    object-fit: cover;
+}
+
+/* para ocultar las flechas de el carousel */
+#carouselExample .carousel-control-prev,
+#carouselExample .carousel-control-next {
+    display: none;
+}
+
+
+ /* Estilos opcionales para el contador */
+ #countdown {
+    font-size: 2em;
+    height: 300px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+/* MEDIAS QUERY */
+
+/* cuando el ancho de pantalla sea al menos 768px se aplican los estilos de esta seccion */
+@media (min-width: 768px) { 
+
+    .contenedor_card{
+        height: 500px;
+    }
+
+    .gradient-overlay h2 {
+        bottom: 100px; /* Ajusta la posición desde la parte inferior */
+        font-size: 50px;
+    }
+
+    .img_galeria{
+        height: 500px;   
+    }
+
+    #countdown {
+        height: 500px;
+    }
+
+}
+
+/* cuando el ancho de pantalla sea al menos 768px se aplican los estilos de esta seccion */
+@media (min-width: 992px) {
+    .contenedor_card{
+        height: 650px;
+    }
+
 }
