@@ -27,55 +27,31 @@ body{
     background-color: rgb(243, 243, 243);
 }
 
-
- /* Contenedor del video en la sección */
- .video-section {
-    position: relative;
+/* .imagen_inicio{
     width: 100%;
-    height: 80vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    object-fit: cover;
+}
+ */
+.imagen-container {
+    position: relative;
+}
+
+.imagen_inicio {
+    width: 100%; /* O el tamaño que desees */
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.texto-superpuesto {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra del texto */
 }
-
-/* Estilos del video */
-.video-section video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    
-    object-fit: cover;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Degradado de abajo hacia arriba */
-/* .video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
-    z-index: 2;
-} */
-
-/* Texto superpuesto */
-.video-text {
-    position: relative;
-    z-index: 3;
-}
-
-/* ----------------------------------- */
-
-
-
 
 .contenedor_card{
     height: 300px;
@@ -180,14 +156,11 @@ body{
         height: 650px;
     }
 
-    .video-section video {
-        position: absolute;
-        top: 0;
-        left: 25%;
-        width: 50%;
+    .imagen_inicio {
+        width: 50%; /* O el tamaño que desees */
     }
 
-    .video-section {
-        height: 100vh;
+    .texto-superpuesto {
+        top: 40%;
     }
 }
