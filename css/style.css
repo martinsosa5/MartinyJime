@@ -24,6 +24,7 @@
 
 body{
     font-family: var(--tipografiaPoppins);
+    background-color: rgb(243, 243, 243);
 }
 
 .contenedor_card{
